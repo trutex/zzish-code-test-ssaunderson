@@ -6,7 +6,7 @@ const isFeatureEnabledForLocation = (location, includedCountries, excludedCountr
   const excludedLocation = excludedCountries.length > 0 && excludedCountries.includes(location);
 
   return includedLocation && !excludedLocation;
-}
+};
 
 const isFeaureEnabledForUser = (feature, email, location) => {
   const { ratio, enabledEmails, includedCountries, excludedCountries } = feature;
